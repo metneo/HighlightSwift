@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 16.1, tvOS 16.1, *)
+@available(iOS 16.1, tvOS 16.1, macOS 13.0, *)
 extension CodeText: View {
     public var body: some View {
         let input = self.input
@@ -25,7 +25,7 @@ extension CodeText: View {
 
 //  MARK: - Preview
 
-@available(iOS 16.1, tvOS 16.1, *)
+@available(iOS 16.1, tvOS 16.1, macOS 13.0, *)
 private struct PreviewCodeText: View {
     @State var colors: CodeTextColors = .theme(.xcode)
     @State var font: Font = .body
@@ -79,7 +79,7 @@ private struct PreviewCodeText: View {
     }
 }
 
-@available(iOS 16.1, tvOS 16.1, *)
+@available(iOS 16.1, tvOS 16.1, macOS 13.0, *)
 #Preview {
     PreviewCodeText()
 }
